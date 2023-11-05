@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sophie Askew</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div id="header">
+        <div class="container" id="intro">
+            <nav>
+                <img src="images/logo.png" alt="Logo" class ="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <span class="material-symbols-outlined">menu</span>
+                <span class="material-symbols-outlined">close</span>
+            </nav>
+            <div class="header-text">
+                <p>lor/em</p>
+                <h1>Lorem ipsum sit,<span>dolor</span><br> amet consectetur ami avecna<br>adipisicing</h1>
+            </div>
+        </div>
+    </div>
+    <!-------------Services--------->
+    <div id="services">
+        <div class="container">
+            <h1 class ="sub-title">Services</h1>
+            <div class="services-list">
+                <div>
+                    <span class="material-symbols-outlined">
+                        palette
+                        </span>
+                    <h2>Custom</h2>
+                    <p>Lorem ipsum dolor sit,Lorem ipsum dolor sit,Lorem ipsum dolor sit,Lorem ipsum dolor sit</p>
+                    <a href="">Learn More</a>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined">
+                        imagesearch_roller
+                        </span>
+                    <h2>Print</h2>
+                    <p>Lorem ipsum dolor sit,Lorem ipsum dolor sit,Lorem ipsum dolor sit</p>
+                    <a href="">Learn More</a>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined">
+                        brush
+                        </span>
+                    <h2>Other</h2>
+                    <p>Lorem ipsum dolor sit,Lorem ipsum dolor sit,Lorem ipsum dolor sit,Lorem ipsum dolor sit,Lorem ipsum dolor sit,Lorem ipsum dolor sit,Lorem ipsum dolor sit,Lorem ipsum dolor sit,Lorem ipsum dolor sit,Lorem ipsum dolor sit</p>
+                    <a href="">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------Gallery------------>
+    <div class="full-img" id ="fullImgBox">
+        <img src="Images/Artpic1(OR).jpg" id ="fullImg" alt="">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <div id="gallery">
+        <div class="container">
+            <h1 class ="sub-title">Gallery</h1>
+            
+            <div class="work-list">
+                <div class="item item1"><img src="images/Artpic1(OR).jpg" onclick="openFullImg(this.src)" alt=""></div>
+                <div class="item item2"><img src="images/artpic2(OR).jpg" onclick="openFullImg(this.src)" alt=""></div>
+                <div class="item item3"><img src="Images//artpic3(OR).jpg" onclick="openFullImg(this.src)" alt=""></div>
+                <div class="item item4"><img src="Images/artpic4(OR).jpg" onclick="openFullImg(this.src)" alt=""></div>
+                <div class="item item5"><img src="Images//artpic5.jpg" onclick="openFullImg(this.src)" alt=""></div>
+                <div class="item item6"><img src="Images/artpic6.jpg" onclick="openFullImg(this.src)" alt=""></div>
+                <div class="item item7"><img src="Images//artpic7.jpg" onclick="openFullImg(this.src)" alt=""></div>
+                <div class="item item8"><img src="Images/artpic8.jpg" onclick="openFullImg(this.src)" alt=""></div>
+                <div class="item item9"><img src="Images/artpic9.jpg" onclick="openFullImg(this.src)" alt=""></div>
+                <div class="item item10"><img src="Images//artpic10.jpg" onclick="openFullImg(this.src)" alt=""></div>
+                <div class="item item11"><img src="Images/artpic11.jpg" onclick="openFullImg(this.src)" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------Contact------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><span class="material-symbols-outlined">send</span> contact@example.co</p>
+                    <p><span class="material-symbols-outlined">call</span> 0121do1</p>
+                    <div class="social-icons">
+                        <a href="https://www.depop.com/askcanvas/"><span class="material-symbols-outlined">storefront</span></a>
+                        <a href="http://www.instagram.com"><span class="material-symbols-outlined">photo_library</span></a>
+                    </div>
+
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name ="Name" placeholder="Your Name" required>
+                        <input type="email" name ="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button class ="btn" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var fullImgBox =document.getElementById("fullImgBox");
+        var fullImg =document.getElementById("fullImg");
+
+        function openFullImg(pic){
+            fullImgBox.style.display ="flex"
+            fullImg.src =pic;
+        }
+        function closeFullImg(){
+            fullImgBox.style.display ="none"
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="full-img" id ="fullImgBox">
+        <img src="Images/Artpic1(OR).jpg" id ="fullImg" alt="">
+    </div>
+    <div id="gallery" >
+        <div class="images ">
+            <div class="item item1 "><img src="images/Artpic1(OR).jpg" class="slideInTop firstwave" onclick="openFullImg(this.src)" alt=""></div>
+            <div class="item item2 "><img src="images/artpic2(OR).jpg" class="slideInBottom thirdwave" onclick="openFullImg(this.src)" alt=""></div>
+            <div class="item item3 "><img src="Images//artpic3(OR).jpg" class="slideInTop firstwave"onclick="openFullImg(this.src)" alt=""></div>
+            <div class="item item4 "><img src="Images/artpic4(OR).jpg" class="slideInBottom thirdwave"onclick="openFullImg(this.src)" alt=""></div>
+            <div class="item item5 "><img src="Images//artpic5.jpg" class="slideInTop firstwave"onclick="openFullImg(this.src)" alt=""></div>
+            <div class="item item6 "><img src="Images/artpic6.jpg" class="slideInTop secondwave"onclick="openFullImg(this.src)" alt=""></div>
+            <div class="item item7 "><img src="Images//artpic7.jpg" class="slideInBottom secondwave"onclick="openFullImg(this.src)" alt=""></div>
+            <div class="item item8 "><img src="Images/artpic8.jpg"class="Enlarge specialwave" onclick="openFullImg(this.src)" alt=""></div>
+            <div class="item item9 "><img src="Images/artpic9.jpg" class="slideInBottom secondwave"onclick="openFullImg(this.src)" alt=""></div>
+            <div class="item item10 "><img src="Images//artpic10.jpg" class="slideInTop secondwave"onclick="openFullImg(this.src)" alt=""></div>
+            <div class="item item11 "><img src="Images/artpic11.jpg" class="slideInTop thirdwave"onclick="openFullImg(this.src)" alt=""></div>
+            <div class="item item12 "><img src="Images/background.png" class="slideInBottom firstwave"onclick="openFullImg(this.src)" alt=""></div>
+            <div class="item item13 "><img src="Images/artpic12.jpg" class="slideInTop thirdwave"onclick="openFullImg(this.src)" alt=""></div>
+            <div class="item item14 "><img src="Images//artpic13.jpg" class="slideInBottom firstwave"onclick="openFullImg(this.src)" alt=""></div>
+            <div class="item item15 "><img src="Images/artpic14.jpg" class="slideInTop thirdwave"onclick="openFullImg(this.src)" alt=""></div>
+        </div>
+</div>
+<script>
+    var fullImgBox =document.getElementById("fullImgBox");
+    var fullImg =document.getElementById("fullImg");
+
+    function openFullImg(pic){
+        fullImgBox.style.display ="flex"
+        fullImg.src =pic;
+        fullImg.style.animationName ="expand"
+    }
+    function closeFullImg(){
+        fullImgBox.style.display ="none"
+    }
+</script>
+</body>
+</html>

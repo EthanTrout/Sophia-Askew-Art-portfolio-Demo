@@ -1,0 +1,190 @@
+body{
+    width: 100%;
+    height: 200%;
+    margin: 0;
+    background-color: #080808;
+}
+#gallery{
+    width: 100%;
+    height: 1vh;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.full-img{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+.full-img img{
+    width: 240px;
+    height: 250px;
+}
+#fullImg{
+    animation-name: none;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+}
+.full-img span{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+.images{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    cursor: pointer;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    
+    
+
+    
+
+    
+}
+
+.item{
+    width:255px;
+    height: 255px;
+}
+
+.item img{
+    width: 240px;
+    height: 250px;
+}
+
+/*---------Ulitity classes----------*/
+.firstwave{
+    animation-duration: 3s;
+    animation-fill-mode: both;
+}
+
+.secondwave{
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+}
+.specialwave{
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+}
+.thirdwave{
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+.animate{
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+/*-------------Animations-----------*/
+
+
+@keyframes slideInTop {
+    0%{
+        transform: translateY(-900px);
+        
+    }
+    50%{
+        transform:translateY(-450px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+    
+}
+
+.slideInTop{
+    animation-name: slideInTop;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes slideInBottom {
+    0%{
+        transform: translateY(900px);
+
+    }
+    50%{
+        transform:translateY(450px);
+    }
+    
+    100%{
+        transform: translateY(0px);
+    }
+    
+}
+.slideInBottom{
+    animation-name: slideInBottom;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes slideInRight {
+    from{
+        transform: translatex(300px);
+
+    }
+    to{
+        transform: translatex(0px);
+    }
+}
+@keyframes slideInLeft {
+    from{
+        transform: translatex(-300px);
+
+    }
+    to{
+        transform: translatex(0px);
+    }
+}
+@keyframes Enlarge{
+    0%{
+        transform: translateY(-900px);
+        
+    }
+    50%{
+        transform:translateY(-450px);
+        
+    }
+    100%{
+        transform: translateY(0px);
+    }
+    
+}
+.Enlarge{
+    animation-name: Enlarge;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes expand{
+    from{
+        transform: scale(1);
+        
+    }
+    to{
+        
+        transform: scale(4);
+    }
+}
+.Expand{
+    animation-name: expand;
+    animation-timing-function: ease-in;
+    animation-duration: 4s;
+    animation-delay: 6s;
+    transform-origin:bottom;
+}
+
+
+
